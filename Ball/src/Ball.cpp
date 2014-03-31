@@ -10,10 +10,10 @@ Ball::Ball() {
 
 //コンストラクタ
 void Ball::draw(){
-    ofSetColor( 31, 63, 255,100);
+    ofSetColor( 31, 63, 255,30);
     ofCircle(pos.x,pos.y, strechedRadius);
     
-    ofSetColor(255, 0, 0, 100);
+    ofSetColor(255, 255, 255, 100);
     ofCircle(pos.x, pos.y, radius/10.0);
     ofSetColor( 31, 63, 255);
 }
