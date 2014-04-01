@@ -74,7 +74,7 @@ void testApp::mouseReleased(int x, int y, int button){
             ofPoint pos = balls[i].getPos();
             float dim = balls[i].getRadius();
             float dist = ofDist(pos.x, pos.y, mouseX, mouseY);
-            if (dist < dim) {
+            if (dist < dim && dim > 5.0) {
                 balls[i].setRadius(dim*0.6);
                 balls[i].setPos(ofPoint(ofRandom(pos.x - dim/10,pos.x + dim/10),ofRandom(pos.y - dim/10,pos.y + dim/10)));
                 balls[i].setSpeed(ofPoint(ofRandom(-dim/150, dim/150),ofRandom(-dim/150, dim/150)));

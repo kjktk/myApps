@@ -4,7 +4,7 @@ Ball::Ball() {
     pos = ofPoint(ofGetWidth()/2,ofGetHeight()/2);
     radius = 100.0;
     speed = ofPoint(0,0);
-    phaseSpeed = ofRandom(0.1,0.5);
+    phaseSpeed = ofRandom(0.05,0.3);
     phase = 0;
 }
 
