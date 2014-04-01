@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxBox2d.h"
+#include "CustomCircle.h"
 
 class testApp : public ofBaseApp{
 
@@ -21,6 +22,7 @@ class testApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
         ofxBox2d box2d;
-        vector <ofPtr<ofxBox2dCircle> > circles;
+        vector <ofPtr<CustomCircle> > circles;
+        vector <ofPtr<ofxBox2dRect> > rects;
 		
 };
